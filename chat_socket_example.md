@@ -4,24 +4,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-// Project imports:
-import 'package:adam_sea/config/env/env.dart';
-import 'package:adam_sea/constants/enums.dart';
-import 'package:adam_sea/constants/preference_keys.dart';
 // Package imports:
-import 'package:adam_sea/models/socket/chat_delivered_res_model.dart';
-import 'package:adam_sea/models/socket/chat_read_res_model.dart';
-import 'package:adam_sea/models/socket/chat_users_res_model.dart';
-import 'package:adam_sea/models/socket/delete_messages_req_model.dart';
-import 'package:adam_sea/models/socket/live_chat_count.dart';
-import 'package:adam_sea/models/socket/offline_user_count_res_model.dart';
-import 'package:adam_sea/models/socket/on_message_res_model.dart';
-import 'package:adam_sea/models/socket/send_message_req_model.dart';
-import 'package:adam_sea/providers/chat/chat_provider.dart';
-import 'package:adam_sea/providers/chat/message_provider.dart';
-import 'package:adam_sea/utils/utils.dart';
-import 'package:master_utility/master_utility.dart';
-import 'package:provider/provider.dart';
 import 'package:socket_io_client/socket_io_client.dart' as socket_io;
 
 class ChatSocket {
