@@ -14,6 +14,7 @@ class ChatSocket {
     if (!(socket?.connected ?? false)) {
       String userToken = await PreferenceServiceHelper().getStringPrefValue(key: PreferenceKeys.keyAccessToken);
       LogHelper.logSuccess("user token : $userToken", stackTrace: StackTrace.current);
+
       socket = socket_io.io(EnvConfig().onlineSocketUrl, {
         "transports": ['websocket'],
         "autoConnect": true,
